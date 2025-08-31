@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    {
+      "name": "beta",
+      "reasons": [
+        "Required for user management features"
+      ],
+      "endpoints": [
+        {
+          "path": "/users/{id}",
+          "method": "GET",
+          "reasons": [
+            "Retrieve a user by ID"
+          ]
+        },
+        {
+          "path": "/users",
+          "method": "POST",
+          "reasons": [
+            "Create a new user"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gamma",
+        "reasons": [
+            "Needed for order processing"
+        ],
+      "endpoints": [
+        {
+          "path": "/orders/{id}",
+          "method": "GET",
+          "reasons": [
+            "Retrieve order details"
+          ]
+        }
+      ]
+    }
+  ]
+}
