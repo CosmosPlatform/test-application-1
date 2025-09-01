@@ -5,7 +5,7 @@
         "Required for user management features"
       ],
       "endpoints": {
-        "/users/{id}": {
+        "/users/{id}}": {
           "get": {
             "reasons": [
               "Retrieve a user by ID"
