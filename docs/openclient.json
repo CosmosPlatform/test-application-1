@@ -1,41 +1,39 @@
 {
-  "dependencies": [
-    {
-      "name": "beta",
+  "dependencies": {
+    "beta" : {
       "reasons": [
         "Required for user management features"
       ],
-      "endpoints": [
-        {
-          "path": "/users/{id}",
-          "method": "GET",
-          "reasons": [
-            "Retrieve a user by ID"
-          ]
+      "endpoints": {
+        "/users/{id}": {
+          "get": {
+            "reasons": [
+              "Retrieve a user by ID"
+            ]
+          }
         },
-        {
-          "path": "/users",
-          "method": "POST",
-          "reasons": [
-            "Create a new user"
-          ]
+        "/users": {
+          "post": {
+            "reasons": [
+              "Create a new user"
+            ]
+          }
         }
-      ]
+      }
     },
-    {
-      "name": "gamma",
-        "reasons": [
-            "Needed for order processing"
-        ],
-      "endpoints": [
-        {
-          "path": "/orders/{id}",
-          "method": "GET",
-          "reasons": [
-            "Retrieve order details"
-          ]
+    "gamma": {
+      "reasons": [
+          "Needed for order processing"
+      ],
+      "endpoints": {
+        "/orders/{id}": {
+          "get": {
+            "reasons": [
+              "Retrieve order details"
+            ]
+          }
         }
-      ]
+      }
     }
-  ]
+  }
 }
