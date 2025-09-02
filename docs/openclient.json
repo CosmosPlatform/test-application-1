@@ -32,18 +32,11 @@
               "Retrieve order details"
             ]
           }
-        }
-      }
-    },
-    "epsilon": {
-      "reasons": [
-          "Needed for order processing"
-      ],
-      "endpoints": {
-        "/orders/{id}": {
-          "get": {
+        },
+        "/orders": {
+          "post": {
             "reasons": [
-              "Retrieve order details"
+              "Create a new order"
             ]
           }
         }
