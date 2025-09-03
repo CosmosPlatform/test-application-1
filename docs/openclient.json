@@ -17,7 +17,8 @@
             "reasons": [
               "Create a new user"
             ]
-          }
+          },
+          "get": {}
         }
       }
     },
