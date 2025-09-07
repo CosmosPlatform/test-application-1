@@ -42,27 +42,6 @@
           }
         }
       }
-    },
-    "theta": {
-      "reasons": [
-        "Supports reporting features"
-      ],
-      "endpoints": {
-        "/reports/{id}": {
-          "get": {
-            "reasons": [
-              "Fetch a specific report"
-            ]
-          }
-        },
-        "/reports": {
-          "get": {
-            "reasons": [
-              "List all reports"
-            ]
-          }
-        }
-      }
     }
   }
 }
