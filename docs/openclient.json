@@ -1,24 +1,16 @@
 {
   "dependencies": {
-    "alpha" : {
+    "analytics-service": {
       "reasons": [
-        "Required for user management features"
+        "Track user signup, login, and profile updates"
       ],
       "endpoints": {
-        "/users/{id}": {
-          "get": {
-            "reasons": [
-              "Retrieve a user by ID"
-            ]
-          }
-        },
-        "/users": {
+        "/events": {
           "post": {
             "reasons": [
-              "Create a new user"
+              "Send user-created, user-logged-in, and user-updated events"
             ]
-          },
-          "get": {}
+          }
         }
       }
     }
