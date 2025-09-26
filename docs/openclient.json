@@ -2,27 +2,27 @@
   "dependencies": {
     "user-service": {
       "reasons": [
-        "Get user contact information for sending notifications"
+        "Verify reviewer identity"
       ],
       "endpoints": {
         "/users/{id}": {
           "get": {
             "reasons": [
-              "Fetch email or phone number"
+              "Ensure user exists before allowing review"
             ]
           }
         }
       }
     },
-    "order-service": {
+    "product-service": {
       "reasons": [
-        "Send order-related notifications"
+        "Validate product being reviewed"
       ],
       "endpoints": {
-        "/orders/{id}": {
+        "/products/{id}": {
           "get": {
             "reasons": [
-              "Retrieve order details for notification content"
+              "Verify product exists before accepting review"
             ]
           }
         }
