@@ -1,19 +1,28 @@
 {
   "dependencies": {
+    "user-service": {
+      "reasons": [
+        "Get user contact information for sending notifications"
+      ],
+      "endpoints": {
+        "/users/{id}": {
+          "get": {
+            "reasons": [
+              "Fetch email or phone number"
+            ]
+          }
+        }
+      }
+    },
     "order-service": {
       "reasons": [
-        "Get shipping details from orders"
+        "Send order-related notifications"
       ],
       "endpoints": {
         "/orders/{id}": {
           "get": {
             "reasons": [
-              "Retrieve shipping address and item list"
-            ]
-          },
-          "put": {
-            "reasons": [
-              "Update order with shipping status"
+              "Retrieve order details for notification content"
             ]
           }
         }
