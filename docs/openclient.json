@@ -13,6 +13,20 @@
           }
         }
       }
+    },
+    "inventory-service": {
+      "reasons": [
+        "Inventoryyyyy"
+      ],
+      "endpoints": {
+        "/events": {
+          "post": {
+            "reasons": [
+              "Send product-view and product-search events"
+            ]
+          }
+        }
+      }
     }
   }
 }
