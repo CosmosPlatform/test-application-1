@@ -1,28 +1,28 @@
 {
   "dependencies": {
-    "user-service": {
-      "reasons": [
-        "Verify reviewer identity"
-      ],
-      "endpoints": {
-        "/users/{id}": {
-          "get": {
-            "reasons": [
-              "Ensure user exists before allowing review"
-            ]
-          }
-        }
-      }
-    },
     "product-service": {
       "reasons": [
-        "Validate product being reviewed"
+        "Get product price and name for cart items"
       ],
       "endpoints": {
         "/products/{id}": {
           "get": {
             "reasons": [
-              "Verify product exists before accepting review"
+              "Retrieve product details for cart"
+            ]
+          }
+        }
+      }
+    },
+    "inventory-service": {
+      "reasons": [
+        "Check availability of items in the cart"
+      ],
+      "endpoints": {
+        "/inventory/{productId}": {
+          "get": {
+            "reasons": [
+              "Ensure item is in stock before checkout"
             ]
           }
         }
