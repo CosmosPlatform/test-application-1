@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "beta" : {
+    "alpha" : {
       "reasons": [
         "Required for user management features"
       ],
@@ -19,27 +19,6 @@
             ]
           },
           "get": {}
-        }
-      }
-    },
-    "gamma": {
-      "reasons": [
-          "Needed for order processing"
-      ],
-      "endpoints": {
-        "/orders/{id}": {
-          "get": {
-            "reasons": [
-              "Retrieve order details"
-            ]
-          }
-        },
-        "/orders": {
-          "post": {
-            "reasons": [
-              "Create a new order"
-            ]
-          }
         }
       }
     }
