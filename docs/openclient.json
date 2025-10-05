@@ -14,6 +14,16 @@
           }
         }
       }
+    },
+    "order-service": {
+      "reasons": ["Handles all order-related operations"],
+      "endpoints": {
+        "/orders/{id}": {
+          "get": {
+            "reasons": ["Fetch specific order information"]
+          }
+        }
+      }
     }
   }
 }
